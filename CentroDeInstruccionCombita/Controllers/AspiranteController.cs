@@ -35,7 +35,7 @@ namespace CentroDeInstruccionCombita.Controllers
             //Agreo Viewbag
             ViewBag.IdCiudad = new SelectList(ciudadbl.listar(), "IdCiudad", "Nombre");
             //ViewBag.IdDepartamento= new SelectList(departamentobl)
-            return View();
+            return View(); 
         }
 
         // POST: Aspirante/Create 
