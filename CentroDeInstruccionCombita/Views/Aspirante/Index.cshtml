@@ -1,0 +1,202 @@
+﻿@model IEnumerable<CentroDeInstruccionCombita.Models.Aspirante>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdAspirante)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PrimerApellido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SegundoApellido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PrimerNombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SegundoNombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaNacimiento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumeroDocumento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaExpedicion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DireccionResidencia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Barrio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CorreoElectronico)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TelefonoFijo1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TelefonoFijo2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TelefonoCelular)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GrupoSanguineo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FactorRh)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Estatura)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Peso)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Eps)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumeroHijo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SerColombiano)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SerBachiller)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RegistroCivil)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Soltero)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CarnetEps)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ObservadorDecimoOnce)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CertificadoFenix)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LeyExento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdCiudad)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdAspirante)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PrimerApellido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SegundoApellido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PrimerNombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SegundoNombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaNacimiento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumeroDocumento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaExpedicion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DireccionResidencia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Barrio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CorreoElectronico)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TelefonoFijo1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TelefonoFijo2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TelefonoCelular)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GrupoSanguineo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FactorRh)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Estatura)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Peso)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Eps)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumeroHijo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SerColombiano)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SerBachiller)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RegistroCivil)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Soltero)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CarnetEps)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ObservadorDecimoOnce)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CertificadoFenix)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LeyExento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdCiudad)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new {IdAspirante=item.IdAspirante }) 
+           @* @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ }) *@
+            <a title="Eliminar" onclick="return confirm('Esta Seguro?'); " href="~/Aspirante/Delete/@item.IdAspirante"> Delete</a>
+        </td>
+    </tr>
+}
+
+</table>
